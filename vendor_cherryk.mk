@@ -13,7 +13,4 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib64/libhwaps.so:system/lib64/libhwaps.so \
 	$(LOCAL_PATH)/lib/hw/gralloc.hi6210sft.so:system/lib/hw/gralloc.hi6210sft.so \
 	$(LOCAL_PATH)/lib64/hw/gralloc.hi6210sft.so:system/lib64/hw/gralloc.hi6210sft.so \
-	$(LOCAL_PATH)/lib/hw/hwcomposer.hi6210sft.so:system/lib/hw/hwcomposer.hi6210sft.so \
-	$(LOCAL_PATH)/lib64/hw/hwcomposer.hi6210sft.so:system/lib64/hw/hwcomposer.hi6210sft.so \
-	$(LOCAL_PATH)/lib/libion.so:system/lib/libion.so \
 	$(LOCAL_PATH)/lib64/libion.so:system/lib64/libion.so
