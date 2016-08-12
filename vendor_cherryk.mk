@@ -35,5 +35,5 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/hi110x_dump:system/bin/hi110x_dump \
 	$(LOCAL_PATH)/bin/hi110x_except_logd:system/bin/hi110x_except_logd \
 	$(LOCAL_PATH)/bin/hi110x_logd:system/bin/hi110x_logd \
-	$(LOCAL_PATH)lib/libchrlog.so:system/lib/libchrlog.so \
+	$(LOCAL_PATH)/lib/libchrlog.so:system/lib/libchrlog.so \
 	$(LOCAL_PATH)/lib64/libchrlog.so:system/lib64/libchrlog.so
