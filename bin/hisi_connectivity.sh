@@ -66,7 +66,7 @@ function main_user()
     load_drivers
 
     if [ $mode != "recovery" ] ; then
-        /system/bin/ini_start&
+    mk_dirs
     fi
 }
 
