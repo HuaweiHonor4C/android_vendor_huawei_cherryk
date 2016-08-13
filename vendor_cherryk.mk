@@ -49,3 +49,13 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/wpa_supplicant_hisi:system/bin/wpa_supplicant_hisi \
 	$(LOCAL_PATH)/bin/octty:system/bin/octty \
 	$(LOCAL_PATH)/bin/agnsscontrol:system/bin/agnsscontrol
+
+# BCM4343s Firmware
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd:system/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd \
+	$(LOCAL_PATH)/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd:system/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd \
+	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_apsta_hw.bin:system/vendor/firmware/fw_bcm4343s_apsta_hw.bin \
+	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_hw.bin:system/vendor/firmware/fw_bcm4343s_hw.bin \
+	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_p2p_hw.bin:system/vendor/firmware/fw_bcm4343s_p2p_hw.bin \
+	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin:system/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin \
+	$(LOCAL_PATH)/vendor/firmware/nvram4343s_hw.txt:system/vendor/firmware/nvram4343s_hw.txt
