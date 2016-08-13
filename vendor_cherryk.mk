@@ -21,7 +21,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/hi110x_except_logd:system/bin/hi110x_except_logd \
 	$(LOCAL_PATH)/bin/hi110x_logd:system/bin/hi110x_logd \
 	$(LOCAL_PATH)/lib/libchrlog.so:system/lib/libchrlog.so \
-	$(LOCAL_PATH)/lib64/libchrlog.so:system/lib64/libchrlog.so
+	$(LOCAL_PATH)/lib64/libchrlog.so:system/lib64/libchrlog.so \
+	$(LOCAL_PATH)/lib/libhisi_ini.so:system/lib/libhisi_ini.so \
+	$(LOCAL_PATH)/lib64/libhisi_ini.so:system/lib64/libhisi_ini.so
 
 # Lights Module
 PRODUCT_COPY_FILES += \
@@ -48,7 +50,15 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/agnsslog:system/bin/agnsslog \
 	$(LOCAL_PATH)/bin/wpa_supplicant_hisi:system/bin/wpa_supplicant_hisi \
 	$(LOCAL_PATH)/bin/octty:system/bin/octty \
-	$(LOCAL_PATH)/bin/agnsscontrol:system/bin/agnsscontrol
+	$(LOCAL_PATH)/bin/agnsscontrol:system/bin/agnsscontrol \
+	$(LOCAL_PATH)/bin/hisi_connectivity.sh:system/bin/hisi_connectivity.sh \
+	$(LOCAL_PATH)/bin/hostapd:system/bin/hostapd \
+	$(LOCAL_PATH)/bin/hostapd_cli_hisi:system/bin/hostapd_cli_hisi \
+	$(LOCAL_PATH)/bin/wpa_supplicant:system/bin/wpa_supplicant \
+	$(LOCAL_PATH)/bin/wpa_cli:system/bin/wpa_cli \
+	$(LOCAL_PATH)/bin/wpa_cli_hisi:system/bin/wpa_cli_hisi \
+	$(LOCAL_PATH)/lib/libhardware_legacy_bcm.so:system/lib/libhardware_legacy_bcm.so \
+	$(LOCAL_PATH)/lib64/libhardware_legacy_bcm.so:system/lib64/libhardware_legacy_bcm.so
 
 # BCM4343s Firmware
 PRODUCT_COPY_FILES += \
