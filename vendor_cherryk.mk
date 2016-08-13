@@ -37,3 +37,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/hw/power.default.so:system/lib/hw/power.default.so \
 	$(LOCAL_PATH)/lib64/hw/power.default.so:system/lib64/hw/power.default.so
+
+# Connectivity
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/bin/hostapd_hisi:system/bin/hostapd_hisi \
+	$(LOCAL_PATH)/bin/mac_addr_normalization:system/bin/mac_addr_normalization \
+	$(LOCAL_PATH)/bin/oam_app:system/bin/oam_app \
+	$(LOCAL_PATH)/bin/wifiwakeupsrc:system/bin/wifiwakeupsrc \
+	$(LOCAL_PATH)/bin/chr_logd:system/bin/chr_logd \
+	$(LOCAL_PATH)/bin/agnsslog:system/bin/agnsslog \
+	$(LOCAL_PATH)/bin/wpa_supplicant_hisi:system/bin/wpa_supplicant_hisi \
+	$(LOCAL_PATH)/bin/octty:system/bin/octty \
+	$(LOCAL_PATH)/bin/agnsscontrol:system/bin/agnsscontrol
