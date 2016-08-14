@@ -69,3 +69,30 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_p2p_hw.bin:system/vendor/firmware/fw_bcm4343s_p2p_hw.bin \
 	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin:system/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin \
 	$(LOCAL_PATH)/vendor/firmware/nvram4343s_hw.txt:system/vendor/firmware/nvram4343s_hw.txt
+
+# RIL (Radio Interface Layer)
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib64/libbalong_audio_ril.so:system/lib64/libbalong_audio_ril.so \
+	$(LOCAL_PATH)/lib/libbalong_audio_ril.so:system/lib/libbalong_audio_ril.so \
+	$(LOCAL_PATH)/lib64/libbalong-ril.so:system/lib64/libbalong-ril.so \
+	$(LOCAL_PATH)/lib64/libbalong-ril-1.so:system/lib64/libbalong-ril-1.so \
+	$(LOCAL_PATH)/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
+	$(LOCAL_PATH)/lib64/libril.so:system/lib64/libril.so \
+	$(LOCAL_PATH)/lib64/librilutils.so:system/lib64/librilutils.so \
+	$(LOCAL_PATH)/bin/rild:system/bin/rild \
+	$(LOCAL_PATH)/lib64/liboeminfo.so:system/lib64/liboeminfo.so \
+	$(LOCAL_PATH)/bin/modemlogcat_lte:system/bin/modemlogcat_lte \
+	$(LOCAL_PATH)/bin/atcmdserver:system/bin/atcmdserver \
+	$(LOCAL_PATH)/lib64/libhsa_common.so:system/lib64/libhsa_common.so \
+	$(LOCAL_PATH)/lib64/libhsa_configprocess.so:system/lib64/libhsa_configprocess.so \
+	$(LOCAL_PATH)/lib64/libhsa_hdlc.so:system/lib64/libhsa_hdlc.so \
+	$(LOCAL_PATH)/lib64/libhsa_msgprocess.so:system/lib64/libhsa_msgprocess.so \
+	$(LOCAL_PATH)/lib64/libnvme.so:system/lib64/libnvme.so \
+	$(LOCAL_PATH)/lib64/libHiSiUEAgent.so:system/lib64/libHiSiUEAgent.so \
+	$(LOCAL_PATH)/lib64/libHisiEncClientDll.so:system/lib64/libHisiEncClientDll.so \
+	$(LOCAL_PATH)/lib64/libconn_factory_test.so:system/lib64/libconn_factory_test.so \
+	$(LOCAL_PATH)/lib64/lib_atprotocolsw.so:system/lib64/lib_atprotocolsw.so \
+	$(LOCAL_PATH)/lib64/libhisi_efuse.so:system/lib64/libhisi_efuse.so \
+	$(LOCAL_PATH)/phone.prop:system/phone.prop \
+	$(LOCAL_PATH)/isp.bin:system/isp.bin \
+	$(LOCAL_PATH)/ons.bin:system/ons.bin
