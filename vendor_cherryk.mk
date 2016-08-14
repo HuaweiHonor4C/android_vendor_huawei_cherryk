@@ -56,18 +56,15 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/hostapd_cli_hisi:system/bin/hostapd_cli_hisi \
 	$(LOCAL_PATH)/bin/wpa_supplicant:system/bin/wpa_supplicant \
 	$(LOCAL_PATH)/bin/wpa_cli:system/bin/wpa_cli \
-	$(LOCAL_PATH)/bin/wpa_cli_hisi:system/bin/wpa_cli_hisi \
-	$(LOCAL_PATH)/lib/libhardware_legacy_bcm.so:system/lib/libhardware_legacy_bcm.so \
-	$(LOCAL_PATH)/lib64/libhardware_legacy_bcm.so:system/lib64/libhardware_legacy_bcm.so
+	$(LOCAL_PATH)/bin/wpa_cli_hisi:system/bin/wpa_cli_hisi
 
 # BCM4343s Firmware
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd:system/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd \
-	$(LOCAL_PATH)/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd:system/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd \
-	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_apsta_hw.bin:system/vendor/firmware/fw_bcm4343s_apsta_hw.bin \
-	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_hw.bin:system/vendor/firmware/fw_bcm4343s_hw.bin \
-	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_p2p_hw.bin:system/vendor/firmware/fw_bcm4343s_p2p_hw.bin \
-	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin:system/vendor/firmware/fw_bcm4343s_test_hw_apsta.bin \
+	$(LOCAL_PATH)/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd:system/vendor/firmware/BCM4343A0.hcd \
+	$(LOCAL_PATH)/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd:system/vendor/firmware/BCM4334B0.hcd \
+	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_apsta_hw.bin:system/vendor/firmware/fw_bcm4343s_apsta.bin \
+	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_hw.bin:system/vendor/firmware/fw_bcm4343s.bin \
+	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_p2p_hw.bin:system/vendor/firmware/fw_bcm4343s_p2p.bin \
 	$(LOCAL_PATH)/vendor/firmware/nvram4343s_hw.txt:system/vendor/firmware/nvram4343s_hw.txt
 
 # RIL (Radio Interface Layer)
@@ -82,6 +79,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/rild:system/bin/rild \
 	$(LOCAL_PATH)/lib64/liboeminfo.so:system/lib64/liboeminfo.so \
 	$(LOCAL_PATH)/bin/modemlogcat_lte:system/bin/modemlogcat_lte \
+	$(LOCAL_PATH)/bin/modem_resetinfo:system/bin/modem_resetinfo \
 	$(LOCAL_PATH)/bin/atcmdserver:system/bin/atcmdserver \
 	$(LOCAL_PATH)/lib64/libhsa_common.so:system/lib64/libhsa_common.so \
 	$(LOCAL_PATH)/lib64/libhsa_configprocess.so:system/lib64/libhsa_configprocess.so \
