@@ -180,7 +180,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libsoundtriggerservice.so:system/lib/libsoundtriggerservice.so \
 	$(LOCAL_PATH)/lib/libswsprocessing.so:system/lib/libswsprocessing.so \
 	$(LOCAL_PATH)/lib/libtfa9895.so:system/lib/libtfa9895.so \
-	$(LOCAL_PATH)/lib/soundfx/libaudioprocessing.so:system/lib/soundfx/libaudioprocessing.so \
+	$(LOCAL_PATH)/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
 	$(LOCAL_PATH)/lib/hw/audio.primary.hi6210sft.so:system/lib/hw/audio.primary.hi6210sft.so \
 	$(LOCAL_PATH)/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
 	$(LOCAL_PATH)/lib/libaudio_custom.so:system/lib/libaudio_custom.so \
