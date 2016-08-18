@@ -146,15 +146,15 @@ PRODUCT_COPY_FILES += \
 
 # hi1101 WiFi libraries
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/lib/libwifi_factory_test_hi1101x.so:system/lib/libwifi_factory_test_hi1101x.so \
+	$(LOCAL_PATH)/lib/libwifi_factory_test_hi110x.so:system/lib/libwifi_factory_test_hi110x.so \
 	$(LOCAL_PATH)/lib/libwifi_factory_test.so:system/lib/libwifi_factory_test.so \
 	$(LOCAL_PATH)/lib/libwifichrstat.so:system/lib/libwifichrstat.so \
 	$(LOCAL_PATH)/lib/libwifipro.so:system/lib/libwifipro.so \
 	$(LOCAL_PATH)/lib/libwpa_client_hisi.so:system/lib/libwpa_client_hisi.so \
-	$(LOCAL_PATH)/lib64/lib64wifi_factory_test_hi1101x.so:system/lib64/lib64wifi_factory_test_hi1101x.so \
-	$(LOCAL_PATH)/lib64/lib64wifi_factory_test.so:system/lib64/lib64wifi_factory_test.so \
-	$(LOCAL_PATH)/lib64/lib64wifichrstat.so:system/lib64/lib64wifichrstat.so \
-	$(LOCAL_PATH)/lib64/lib64wifipro.so:system/lib64/lib64wifipro.so \
+	$(LOCAL_PATH)/lib64/libwifi_factory_test_hi110x.so:system/lib64/libwifi_factory_test_hi110x.so \
+	$(LOCAL_PATH)/lib64/libwifi_factory_test.so:system/lib64/libwifi_factory_test.so \
+	$(LOCAL_PATH)/lib64/libwifichrstat.so:system/lib64/libwifichrstat.so \
+	$(LOCAL_PATH)/lib64/libwifipro.so:system/lib64/libwifipro.so \
 	$(LOCAL_PATH)/lib64/libwpa_client_hisi.so:system/lib64/libwpa_client_hisi.so \
 	$(LOCAL_PATH)/lib64/libecc_hisi.so:system/lib64/libecc_hisi.so
 
@@ -165,9 +165,7 @@ PRODUCT_COPY_FILES += \
 # FM
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/hw/fm.hi110x.hi6210sft.so:system/lib/hw/fm.hi110x.hi6210sft.so \
-	$(LOCAL_PATH)/lib64/hw/fm.hi110x.hi6210sft.so:system/lib64/hw/fm.hi110x.hi6210sft.so \
-	$(LOCAL_PATH)/lib/hw/fm.bcm.hi6210sft.so:system/lib/hw/fm.bcm.hi6210sft.so \
-	$(LOCAL_PATH)/lib64/hw/fm.bcm.hi6210sft.so:system/lib/hw/fm.bcm.hi6210sft.so
+	$(LOCAL_PATH)/lib64/hw/fm.hi110x.hi6210sft.so:system/lib64/hw/fm.hi110x.hi6210sft.so
 
 
 
