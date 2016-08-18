@@ -63,15 +63,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/wpa_cli:system/bin/wpa_cli \
 	$(LOCAL_PATH)/bin/wpa_cli_hisi:system/bin/wpa_cli_hisi
 
-# BCM4343s Firmware
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/vendor/firmware/4343A0_001.001.034.0056.0193_ORC.hcd:system/vendor/firmware/BCM4343A0.hcd \
-	$(LOCAL_PATH)/vendor/firmware/BCM4334B0_002.001.013.1554.1613_RC.hcd:system/vendor/firmware/BCM4334B0.hcd \
-	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_apsta_hw.bin:system/vendor/firmware/fw_bcm4343s_apsta.bin \
-	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_hw.bin:system/vendor/firmware/fw_bcm4343s.bin \
-	$(LOCAL_PATH)/vendor/firmware/fw_bcm4343s_p2p_hw.bin:system/vendor/firmware/fw_bcm4343s_p2p.bin \
-	$(LOCAL_PATH)/vendor/firmware/nvram4343s_hw.txt:system/vendor/firmware/nvram4343s_hw.txt
-
 # RIL (Radio Interface Layer)
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib64/libbalong_audio_ril.so:system/lib64/libbalong_audio_ril.so \
@@ -100,11 +91,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/isp.bin:system/isp.bin \
 	$(LOCAL_PATH)/ons.bin:system/ons.bin
 
-# Camera
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/lib/hw/camera.hi6210sft.so:system/lib/hw/camera.hi6210sft.so \
-	$(LOCAL_PATH)/lib64/hw/camera.hi6210sft.so:system/lib64/hw/camera.hi6210sft.so \
-
 # Core Camera Lens files
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/cherryk/etc/camera/,system/etc/camera/) \
@@ -124,8 +110,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib64/libbt_factory_test_hi110x.so:system/lib64/libbt_factory_test_hi110x.so \
 	$(LOCAL_PATH)/lib64/libbt_factory_test.so:system/lib64/libbt_factory_test.so \
 	$(LOCAL_PATH)/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
-	$(LOCAL_PATH)/lib/libbt-vendor-hi110x.so:system/lib/libbt-vendor-hi110x.so \
-	$(LOCAL_PATH)/lib64/libbt-vendor-hi110x.so:system/lib64/libbt-vendor-hi110x.so \
+	$(LOCAL_PATH)/lib/libbt-vendor-hi110x.so:system/vendor/lib/libbt-vendor-hi110x.so \
+	$(LOCAL_PATH)/lib64/libbt-vendor-hi110x.so:system/vendor/lib64/libbt-vendor-hi110x.so \
 	$(LOCAL_PATH)/lib64/libbtaddrjni.so:system/lib64/libbtaddrjni.so
 
 # Audio Configs
@@ -202,8 +188,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib64/libgps_factory_test_hi110x.so:system/lib64/libgps_factory_test_hi110x.so \
 	$(LOCAL_PATH)/lib64/libgps_factory_test.so:system/lib64/libgps_factory_test.so \
 	$(LOCAL_PATH)/lib64/libagnssal.so:system/lib64/libagnssal.so \
-	$(LOCAL_PATH)/lib/libcalmodule_akm.so:system/lib/libcalmodule_akm.so \
-	$(LOCAL_PATH)/lib64/libcalmodule_akm.so:system/libcalmodule_akm.so
+	$(LOCAL_PATH)/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
+	$(LOCAL_PATH)/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so
 
 
 
