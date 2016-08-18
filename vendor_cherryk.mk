@@ -57,10 +57,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/octty:system/bin/octty \
 	$(LOCAL_PATH)/bin/agnsscontrol:system/bin/agnsscontrol \
 	$(LOCAL_PATH)/bin/hisi_connectivity.sh:system/bin/hisi_connectivity.sh \
-	$(LOCAL_PATH)/bin/hostapd:system/bin/hostapd \
 	$(LOCAL_PATH)/bin/hostapd_cli_hisi:system/bin/hostapd_cli_hisi \
-	$(LOCAL_PATH)/bin/wpa_supplicant:system/bin/wpa_supplicant \
-	$(LOCAL_PATH)/bin/wpa_cli:system/bin/wpa_cli \
 	$(LOCAL_PATH)/bin/wpa_cli_hisi:system/bin/wpa_cli_hisi
 
 # RIL (Radio Interface Layer)
@@ -119,54 +116,10 @@ PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/cherryk/etc/audio/,system/etc/audio/) \
 	$(LOCAL_PATH)/etc/sws/sws_config.txt:system/etc/sws/sws_config.txt
 
-# Audio Libs
-#PRODUCT_COPY_FILES += \
-#	$(LOCAL_PATH)/lib/libaudioalgoservice_jni.so:system/lib/libaudioalgoservice_jni.so \
-#	$(LOCAL_PATH)/lib/libaudioeffect_jni.so:system/lib/libaudioeffect_jni.so \
-#	$(LOCAL_PATH)/lib/libaudioflinger.huawei.so:system/lib/libaudioflinger.huawei.so \
-#	$(LOCAL_PATH)/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
-#	$(LOCAL_PATH)/lib/libaudiopolicymanager.so:system/lib/libaudiopolicymanager.so \
-#	$(LOCAL_PATH)/lib/libaudiopolicymanagerdefault.so:system/lib/libaudiopolicymanagerdefault.so \
-#	$(LOCAL_PATH)/lib/libaudiopolicyservice.so:system/lib/libaudiopolicyservice.so \
-#	$(LOCAL_PATH)/lib/libaudiospdif.so:system/lib/libaudiospdif.so \
-#	$(LOCAL_PATH)/lib/libaudiotestalgo.so:system/lib/libaudiotestalgo.so \
-#	$(LOCAL_PATH)/lib/libaudioutils.so:system/lib/libaudioutils.so \
-#	$(LOCAL_PATH)/lib/libjankservice.so:system/lib/libjankservice.so \
-#	$(LOCAL_PATH)/lib/libmax98925.so:system/lib/libmax98925.so \
-#	$(LOCAL_PATH)/lib/libOpenMAXAL.so:system/lib/libOpenMAXAL.so \
-#	$(LOCAL_PATH)/lib/libOpenSLES.so:system/lib/libOpenSLES.so \
-#	$(LOCAL_PATH)/lib/libsonic.so:system/lib/libsonic.so \
-#	$(LOCAL_PATH)/lib/libsonivox.so:system/lib/libsonivox.so \
-#	$(LOCAL_PATH)/lib/libsoundtrigger.so:system/lib/libsoundtrigger.so \
-#	$(LOCAL_PATH)/lib/libsoundtriggerservice.so:system/lib/libsoundtriggerservice.so \
-#	$(LOCAL_PATH)/lib/libswsprocessing.so:system/lib/libswsprocessing.so \
-#	$(LOCAL_PATH)/lib/libtfa9895.so:system/lib/libtfa9895.so \
-#	$(LOCAL_PATH)/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
-#	$(LOCAL_PATH)/lib/hw/audio.primary.hi6210sft.so:system/lib/hw/audio.primary.hi6210sft.so \
-#	$(LOCAL_PATH)/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
-#	$(LOCAL_PATH)/lib/libaudio-resampler.so:system/lib/libaudio-resampler.so \
-#	$(LOCAL_PATH)/lib/libaudiopolicyenginedefault.so:system/lib/libaudiopolicyenginedefault.so \
-#	$(LOCAL_PATH)/lib/libteec.so:system/lib/libteec.so \
-#	$(LOCAL_PATH)/lib64/libaudio_custom.so:system/lib64/libaudio_custom.so \
-#	$(LOCAL_PATH)/lib64/libaudio-resampler.so:system/lib64/libaudio-resampler.so \
-#	$(LOCAL_PATH)/lib64/libaudioalgoservice_jni.so:system/lib64/libaudioalgoservice_jni.so \
-#	$(LOCAL_PATH)/lib64/libaudioeffect_jni.so:system/lib64/libaudioeffect_jni.so \
-#	$(LOCAL_PATH)/lib64/libaudiopolicyenginedefault.so:system/lib64/libaudiopolicyenginedefault.so \
-#	$(LOCAL_PATH)/lib64/libaudiopolicymanager.so:system/lib64/libaudiopolicymanager.so \
-#	$(LOCAL_PATH)/lib64/libaudiopolicymanagerdefault.so:system/lib64/libaudiopolicymanagerdefault.so \
-#	$(LOCAL_PATH)/lib64/libaudiopolicyservice.so:system/lib64/libaudiopolicyservice.so \
-#	$(LOCAL_PATH)/lib64/libaudiotestalgo.so:system/lib64/libaudiotestalgo.so \
-#	$(LOCAL_PATH)/lib64/libaudioutils.so:system/lib64/libaudioutils.so \
-#	$(LOCAL_PATH)/lib64/libmax98925.so:system/lib64/libmax98925.so \
-#	$(LOCAL_PATH)/lib64/libOpenMAXAL.so:system/lib64/libOpenMAXAL.so \
-#	$(LOCAL_PATH)/lib64/libOpenSLES.so:system/lib64/libOpenSLES.so \
-#	$(LOCAL_PATH)/lib64/libsonic.so:system/lib64/libsonic.so \
-#	$(LOCAL_PATH)/lib64/libsonivox.so:system/lib64/libsonivox.so \
-#	$(LOCAL_PATH)/lib64/libteec.so:system/lib64/libteec.so \
-#	$(LOCAL_PATH)/lib64/hw/audio.primary.hi6210sft.so:system/lib64/hw/audio.primary.hi6210sft.so \
-#	$(LOCAL_PATH)/lib64/hw/audio.r_submix.default.so:system/lib64/hw/audio.r_submix.default.so \
-#	$(LOCAL_PATH)/lib/libjankservice.so:system/lib/libjankservice.so \
-#	$(LOCAL_PATH)/lib64/libjankservice.so:system/lib/libjankservice.so
+# Audio
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib/hw/audio.primary.hi6210sft.so:system/lib/hw/audio.primary.hi6210sft.so \
+	$(LOCAL_PATH)/lib64/hw/audio.primary.hi6210sft.so:system/lib64/hw/audio.primary.hi6210sft.so
 
 # Display Caps 
 PRODUCT_COPY_FILES += \
@@ -190,6 +143,31 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib64/libagnssal.so:system/lib64/libagnssal.so \
 	$(LOCAL_PATH)/lib/libcalmodule_akm.so:system/vendor/lib/libcalmodule_akm.so \
 	$(LOCAL_PATH)/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so
+
+# hi1101 WiFi libraries
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib/libwifi_factory_test_hi1101x.so:system/lib/libwifi_factory_test_hi1101x.so \
+	$(LOCAL_PATH)/lib/libwifi_factory_test.so:system/lib/libwifi_factory_test.so \
+	$(LOCAL_PATH)/lib/libwifichrstat.so:system/lib/libwifichrstat.so \
+	$(LOCAL_PATH)/lib/libwifipro.so:system/lib/libwifipro.so \
+	$(LOCAL_PATH)/lib/libwpa_client_hisi.so:system/lib/libwpa_client_hisi.so \
+	$(LOCAL_PATH)/lib64/lib64wifi_factory_test_hi1101x.so:system/lib64/lib64wifi_factory_test_hi1101x.so \
+	$(LOCAL_PATH)/lib64/lib64wifi_factory_test.so:system/lib64/lib64wifi_factory_test.so \
+	$(LOCAL_PATH)/lib64/lib64wifichrstat.so:system/lib64/lib64wifichrstat.so \
+	$(LOCAL_PATH)/lib64/lib64wifipro.so:system/lib64/lib64wifipro.so \
+	$(LOCAL_PATH)/lib64/libwpa_client_hisi.so:system/lib64/libwpa_client_hisi.so \
+	$(LOCAL_PATH)/lib64/libecc_hisi.so:system/lib64/libecc_hisi.so
+
+# Misc
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib/hw/hw_af_extend.default.so:system/lib/hw/hw_af_extend.default.so
+
+# FM
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/lib/hw/fm.hi110x.hi6210sft.so:system/lib/hw/fm.hi110x.hi6210sft.so \
+	$(LOCAL_PATH)/lib64/hw/fm.hi110x.hi6210sft.so:system/lib64/hw/fm.hi110x.hi6210sft.so \
+	$(LOCAL_PATH)/lib/hw/fm.bcm.hi6210sft.so:system/lib/hw/fm.bcm.hi6210sft.so \
+	$(LOCAL_PATH)/lib64/hw/fm.bcm.hi6210sft.so:system/lib/hw/fm.bcm.hi6210sft.so
 
 
 
